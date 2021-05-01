@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Alteração de email" variant="Narrow" >
+        <lightning-input class="slds-m-around_x-small" name="email1" data-id="email1" type="email" label="Digite o novo email" value={emailCampo1} onblur={compare} onpaste={clearClipboard} onchange={updateField} required message-when-type-mismatch="Formato de email inválido" message-when-value-missing="Campo obrigatório"></lightning-input>
+        <lightning-input class="slds-m-around_x-small" name="email2" data-id="email2" type="email" label="Repita o email digitado"  value={emailCampo2} onblur={compare} onpaste={clearClipboard} onchange={updateField} required message-when-type-mismatch="Formato de email inválido" message-when-value-missing="Campo obrigatório" ></lightning-input>
+
+        <lightning-button label="Salvar email" disabled variant="brand" onclick={updateContactEmail} class="slds-m-around_x-small"></lightning-button>
+
+    </lightning-card>
+</template>

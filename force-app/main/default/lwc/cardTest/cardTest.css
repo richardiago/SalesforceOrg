@@ -1,0 +1,22 @@
+.app {
+    background-color: rgba(176, 196, 223, 1);
+}
+
+.lcard {
+    background-color: red;
+}
+
+.fixedElement {
+    position:fixed;
+    /* top:10%; */
+    /* width:100%; */
+    z-index:100;
+    
+}
+
+.content {
+
+    height: 100%;
+    position:relative; 
+    /* top: 60%; */
+}

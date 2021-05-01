@@ -1,0 +1,79 @@
+<template>
+
+    <!-- Tela Secundária -->
+    <template if:true={quantScreen}>
+        <template for:each={selectedRows} for:item="prod" for:index="index">
+            <lightning-record-edit-form key={prod.id} object-api-name="OpportunityLineItem">
+                <lightning-messages>
+                </lightning-messages>
+                <lightning-layout multiple-rows>
+
+                    <lightning-layout-item size="2"  hidden>
+                        <lightning-input-field field-name="OpportunityId" variant="label-stacked" required disabled value={recordId}>
+                        </lightning-input-field>
+                    </lightning-layout-item>
+                    
+                    <lightning-layout-item size="3" >
+                        <lightning-input-field field-name="Product2Id" variant="label-stacked" required value={prod.Id} disabled>
+                        </lightning-input-field>
+                    </lightning-layout-item>
+                        
+                        
+                    <lightning-layout-item size="2" >
+                        <lightning-input-field field-name="Quantity" variant="label-stacked" required>
+                        </lightning-input-field>
+                    </lightning-layout-item>
+
+                    <lightning-layout-item size="2" >
+                        <lightning-input-field field-name="TotalPrice" variant="label-stacked" required>
+                        </lightning-input-field>
+                    </lightning-layout-item>
+
+
+                    <lightning-layout-item size="3" >
+                        <lightning-input-field field-name="ServiceDate" variant="label-stacked" required>
+                        </lightning-input-field>
+
+                    </lightning-layout-item>
+
+                    
+                    <lightning-layout-item size="1" padding="around-small">
+                        <div class="slds-p-top_large">
+                            <lightning-icon icon-name="action:delete" access-key={prod.Id} id={index}
+                                alternative-text="Delete Row" size="xx-small" title="Excluir Produto" onclick={removeRow}>
+                            </lightning-icon>
+                        </div>
+                    </lightning-layout-item>
+                        
+                    
+                </lightning-layout>
+            </lightning-record-edit-form>
+
+
+        </template>
+
+        <br/>
+        <lightning-layout>
+
+            <div class="slds-container_right">
+                <lightning-button variant="neutral" onclick={backToBegin} name="cancel" label="Cancelar" class="slds-p-around_small">
+                </lightning-button>
+
+                <lightning-button variant="success" onclick={handleSubmit} name="submit" label="Incluir Produtos" class="slds-p-around_small">
+                </lightning-button>
+            </div>
+        </lightning-layout>
+    </template>
+
+    <!-- Tela Primária -->
+    <template if:false={quantScreen}>
+
+        <lightning-button variant="brand" label="Adicionar Produto(s)" title="addProduct" onclick={quantProducts} class="slds-float_right" disabled></lightning-button>
+        <br/>
+        <br/>
+        <lightning-datatable data={products.data} columns={columns} key-field="Id" onrowselection={enableButton}>
+        </lightning-datatable>
+
+    </template>
+    
+</template>
