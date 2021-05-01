@@ -8,8 +8,8 @@ public abstract with sharing class TriggerHandler {
     
     public TriggerHandler(System.TriggerOperation operation, List<SObject> newRecordList, List<SObject> oldRecordList, Map<Id, SObject> newMap, Map<Id, SObject> oldMap) {
         this.operation     = operation;
-        this.newRecordList = newRecords;
-        this.oldRecordList = oldRecords;
+        this.newRecordList = newRecordList;
+        this.oldRecordList = oldRecordList;
         this.newMap        = newMap;
         this.oldMap        = oldMap;
     }

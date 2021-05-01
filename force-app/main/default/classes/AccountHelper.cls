@@ -1,18 +1,5 @@
-public class AccountTriggerHandler {
-    
-    private Boolean isExecuting = false;
-    public List<Account> oldRecordsList = null;
-    public List<Account> newRecordsList = null;
-    public Map<Id, Account> oldRecordsMap = null;
-    public Map<Id, Account> newRecordsMap = null;
-
-    public AccountTriggerHandler(Boolean isExecuting) {
-        this.isExecuting = isExecuting;
-    }
-
-    public void onAfterUpdate(){
-        criaHistoricoConta(this.newRecordsMap, this.oldRecordsMap);
-    }
+public with sharing class AccountHelper {
+    public AccountHelper() {}
 
     public static void criaHistoricoConta(Map<Id, Account> newRecordsMap, Map<Id, Account> oldRecordsMap){
 
