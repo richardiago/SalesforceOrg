@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Changed_by_Component__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indica se o email do contato está sendo alterado pelo componente de Edição de email, caso seja igual a false uma mensagem de erro é exibida.</description>
+    <externalId>false</externalId>
+    <label>Email Changed by Component</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>
