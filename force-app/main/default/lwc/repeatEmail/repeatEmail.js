@@ -52,7 +52,7 @@ export default class RepeatEmail extends LightningElement {
             this.dispatchEvent(
                 new ShowToastEvent({
                     title: "Atualização de email",
-                    message: error.message.body,
+                    message: "Não foi possível atualizar o email. Verifique o email digitado ou contate o Administrador do Sistema",
                     variant: 'error',
                 }),
             );
