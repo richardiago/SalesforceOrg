@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuestionType__c</fullName>
+    <description>Descreva o tipo de resposta aceita para essa pergunta</description>
+    <externalId>false</externalId>
+    <label>Tipo de Pergunta</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Picklist</fullName>
+                <default>false</default>
+                <label>Picklist</label>
+            </value>
+            <value>
+                <fullName>Texto</fullName>
+                <default>false</default>
+                <label>Texto</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
