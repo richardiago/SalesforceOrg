@@ -9,7 +9,6 @@ public with sharing class AlunoHelper {
     public static void SortingHatHouse(Set<Id> alunosId){
 
         List<Aluno__c> alunosToUpdate = new List<Aluno__c>();
-        List<Log_Integracao__c> logsToInsert = new List<Log_Integracao__c>();
 
         Potter_Api__mdt potterApi = [SELECT Base_URL__c, 
                                                 Character_Routes__c, 
@@ -35,19 +34,15 @@ public with sharing class AlunoHelper {
                 alunosToUpdate.add(aluno);
 
                 //Cria o log de integração
-                logsToInsert.add(new Log_Integracao__c(Tipo__c= 'Consulta', Status__c='SUCCESS', Response__c= 'Casa sorteada: '+response.getBody().remove('"')+'\nId do aluno: '+aId));
+                IntegrationUtils.WSLog('Consulta Casa Hogwarts', 'Inbound', JSON.serialize(request), JSON.serialize(response), false);
             }
             else{
                 //Cria o log de integração
-                logsToInsert.add(new Log_Integracao__c(Tipo__c= 'Consulta', Status__c='FAIL', Response__c= response.getBody().remove('"')+' Id do aluno: '+aId));
+                IntegrationUtils.WSLog('Consulta Casa Hogwarts', 'Inbound', JSON.serialize(request), JSON.serialize(response), true);
             }
 
             if(!alunosToUpdate.isEmpty()){
                 update alunosToUpdate;
-            }
-    
-            if(!logsToInsert.isEmpty()){
-                insert logsToInsert;
             }
         }
         

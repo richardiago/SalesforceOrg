@@ -18,8 +18,8 @@ global with sharing class BulkApiContact {
                 res.responseBody = Blob.valueOf(JSON.serialize(response));
                 res.statusCode = 200;
 
-                Log_Integracao__c log = new Log_Integracao__c(Status__c = 'SUCCESS', Tipo__c = 'Inbound', Payload_Out__c = JSON.serialize(response));
-                insert log;
+                IntegrationUtils.WSLog('Bulk API Contact', 'Inbound', JSON.serialize(request), JSON.serialize(response), false);
+
             }
             
         }
@@ -28,9 +28,8 @@ global with sharing class BulkApiContact {
 
                 res.responseBody = Blob.valueOf('Bad request. Verify your body request please.');
                 res.statusCode = 200;
-                
-                Log_Integracao__c log = new Log_Integracao__c(Status__c = 'ERROR', Tipo__c = 'Inbound', Payload_Out__c = 'Bad request. Verify your body request please.');
-                insert log;
+
+                IntegrationUtils.WSLog('Bulk API Contact', 'Inbound', JSON.serialize(request), JSON.serialize(res.responseBody), true);
             }
         }             
         
