@@ -16,7 +16,7 @@ export default class CardTest extends LightningElement {
     contacts;
     
     //Acessa o método apex getContacts e retorna uma lista de contatos
-    @wire(getContacts, {accountId: '$recId'})
+    @wire(getContacts, {accountId: '$recordId'})
     contatos ({error, data}){
         if(data){
             this.contacts = data;
@@ -158,7 +158,7 @@ export default class CardTest extends LightningElement {
         }
 
         //Chama o método apex e cria o objeto relacionado 'Sócio'
-        createSocios({accountId: this.recId, contactsId: idsList})
+        createSocios({accountId: this.recordId, contactsId: idsList})
             .then((result) => {
                 
                 eval("$A.get('e.force:refreshView').fire();");

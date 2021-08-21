@@ -2,13 +2,13 @@
     <div class="app">
         
 
-        <div class="slds-size_3-of-3 slds-p-around_x-small app">
+        <div class="slds-size_3-of-3 slds-var-p-around_x-small app">
             <lightning-input type="search" label="Busca" onkeyup={searchTerm} onchange={clearSearchBar}></lightning-input>
         </div>
         
 
         <template if:false={showItens}>
-            <p class="slds-p-horizontal_small" style="font-size:22px">Esta conta não possui nenhum contato</p>
+            <p class="slds-var-p-horizontal_small" style="font-size:22px">Esta conta não possui nenhum contato</p>
         </template>
         
         <template if:true={showItens}>
@@ -19,7 +19,7 @@
             <div class="demo-only demo-only--sizing slds-grid slds-wrap app">
                 
                     <template for:each={contacts} for:item="contact">
-                        <div class="slds-size_1-of-4 slds-p-around_x-small app" data-my-id="cardId" key={contact.Id}>
+                        <div class="slds-size_1-of-4 slds-var-p-around_x-small app" data-my-id="cardId" key={contact.Id}>
                             
                             <lightning-card  title={contact.Name} variant="Narrow" icon-name="standard:avatar">
                                 
@@ -28,17 +28,17 @@
                                         <lightning-input type="checkbox-button" label="Input One" name="input1" onchange={enableButton} data-my-id="inputCheckbox"></lightning-input>
                                     </div>
                 
-                                    <p class="slds-p-horizontal_small">Title: 
+                                    <p class="slds-var-p-horizontal_small">Title: 
                                         <span data-my-id='myContent'>
                                             {contact.Title}
                                         </span>
                                     </p>
-                                    <p class="slds-p-horizontal_small">Email: 
+                                    <p class="slds-var-p-horizontal_small">Email: 
                                         <span data-my-id='myContent'>
                                             {contact.Email}
                                         </span>
                                     </p>
-                                    <p class="slds-p-horizontal_small">Phone: 
+                                    <p class="slds-var-p-horizontal_small">Phone: 
                                         <span data-my-id='myContent'>
                                             {contact.Phone}
                                         </span>
@@ -57,10 +57,12 @@
     </div>
     
     <!-- <template if:true={showItens}> -->
-        <div class="app slds-docked-form-footer ">
-            <lightning-button variant="brand" label={buttonSelectAllLabel} title="selectAllItens"  data-my-id="selectAllId" onclick={selectAll} class="slds-float_right slds-p-around_x-small"></lightning-button>
-            <lightning-button variant="brand" label="Confirmar" title="confirmar"  onclick={createObjects} class="slds-float_right slds-p-around_x-small" data-my-id="confirm" disabled></lightning-button>
-        </div>
+        <footer>
+            <div class="app">
+                <lightning-button variant="brand" label={buttonSelectAllLabel} title="selectAllItens"  data-my-id="selectAllId" onclick={selectAll} class="slds-float_right slds-p-around_x-small"></lightning-button>
+                <lightning-button variant="brand" label="Confirmar" title="confirmar"  onclick={createObjects} class="slds-float_right slds-p-around_x-small" data-my-id="confirm" disabled></lightning-button>
+            </div>
+        </footer>
     <!-- </template> -->
 
 </template>

@@ -2,21 +2,17 @@
     background-color: rgba(176, 196, 223, 1);
 }
 
-.lcard {
-    background-color: red;
-}
-
-.fixedElement {
+/* .fixedElement {
     position:fixed;
-    /* top:10%; */
-    /* width:100%; */
+    top:10%; 
+    width:100%;
     z-index:100;
     
-}
+} */
 
-.content {
+/*.content {
 
     height: 100%;
     position:relative; 
-    /* top: 60%; */
-}
+    /* top: 60%; 
+}*/

@@ -1,18 +1,9 @@
 {
-  "orgName": "Demo company",
-  "edition": "Developer",
-  "features": [],
+  "orgName": "Minha Scratch Org",
+  "sourceOrg": "00D3h000005XEDq",
   "settings": {
-    "lightningExperienceSettings": {
-        "enableS1DesktopEnabled": true
-    },
-    "securitySettings": {
-        "passwordPolicies": {
-            "enableSetPasswordInApi": true
-        }
-    },
-    "mobileSettings": {
-        "enableS1EncryptedStoragePref2": false
+    "BotSettings": {
+      "enableBots": true
     }
   }
 }
