@@ -26,13 +26,11 @@ public class AccountCSVGenerator {
 
         Messaging.EmailFileAttachment csvAttc = new Messaging.EmailFileAttachment();
         Blob csvBlob = Blob.valueOf(finalstr);
-        //String csvname = ;
         csvAttc.setFileName('Account.csv');
         csvAttc.setBody(csvBlob);
 
         Messaging.SingleEmailMessage email = new Messaging.SingleEmailMessage();
         List<String> toAddresses = new List<String> {emailList[0]};
-        //String subject =
         email.setSubject('Salesforce - Arquivo CSV das Contas');
         email.setToAddresses(toAddresses);
         email.setPlainTextBody('Segue em anexo, o(s) arquivo(s) csv com as Contas. Obrigado por utilizar o Salesforce. Viva Ohana !!');
