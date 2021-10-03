@@ -1,0 +1,78 @@
+<template>
+
+    <!-- Tela com spinner -->
+    <template if:true={showSpinner}>
+        <div class="spinnerScreen">
+            <!-- Mensagem de "Carregando Dados" -->
+            <template if:true={showLoadingDataMessage}>
+                <div class="spinnerMessage">
+                    <div>Carregando Dados</div>
+                </div>
+            </template>
+    
+            <!-- Mensagem de "Enviando Dados" -->
+            <template if:true={showSendingDataMessage}>
+                <div class="spinnerMessage">
+                    <div>Enviando Dados</div>
+                </div>
+            </template>
+    
+            <div class="spinner">
+                <lightning-spinner alternative-text="Carregando" size="large" variant="brand"></lightning-spinner>
+            </div>
+        </div>
+    </template>
+
+    <!-- Tela para quando não houver ativos relacionados -->
+    <template if:true={showNoItemsMessage}>
+        <div class="noItemsMessageScreen">
+            <div>Não há ativos relacionados a essa conta. Crie um ou utilize o botão "Consulta Ativo"</div>
+        </div>
+    </template>
+
+    <!-- Tela para quando houver erro na API -->
+    <template if:true={showErrorMessage}>
+        <div class="errorMessageScreen">
+            <div class="errorMessage">
+                <div>Houve um erro ao acionar a API de Atendimento Facilitado. <br>Por favor comunique ao Administrador do Sistema</div>
+            </div>
+        
+            <div class="iconError">
+                <lightning-icon icon-name="action:close" alternative-text="Erro ao acionar a API " title="Erro ao acionar a API"></lightning-icon>
+            </div>
+        </div>
+    </template>
+
+    <!-- Tela com os ativos relacionados à conta -->
+    <template if:true={showItems}>
+        <div class="datatableScreen">
+
+            <div class="datatableMessage">
+                A conta relacionada a esse caso possui mais de um ativo. <br>
+                Selecione aquele que deseja enviar ao Atendimento Facilitado.
+            </div>
+
+            <div class="datatable">
+                <lightning-datatable key-field="id" data={data} columns={columns} max-row-selection="1" resize-column-disabled onrowselection={enableButton}></lightning-datatable>
+            </div>
+
+            <div class="button">
+                <lightning-button variant="brand" label="Abrir chamado no Assist" icon-name="utility:insert_template" disabled onclick={sendInformation}></lightning-button>
+            </div>
+
+        </div>
+    </template>
+
+    <!-- Tela com mensagem de sucesso -->
+    <template if:true={showSuccessMessage}>
+        <div class="sucessMessageScreen">
+            <div class="sucessMessage">
+                <div>Dados enviados com sucesso</div>
+            </div>
+            <div class="iconSuccess">
+                <lightning-icon icon-name="action:approval" alternative-text="Dados enviados com sucesso" title="Sucesso ao enviar dados"></lightning-icon>
+            </div>
+        </div>
+    </template>
+    
+</template>

@@ -1,0 +1,52 @@
+.spinnerScreen, .noItemsMessageScreen, .errorMessageScreen, .sucessMessageScreen{
+    border: solid #00a335;
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    text-align: center;
+}
+
+.datatableScreen{
+    border: solid #00a335;
+    padding: 1em;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    text-align: center;
+}
+
+.datatableMessage{
+    padding-bottom: 1em;
+}
+
+.spinnerMessage, .sucessMessage, .errorMessage{
+    padding-right: 1em;
+}
+
+.datatable{
+    height: 300px;
+}
+
+.button{
+    padding-top: 1em;
+}
+
+.spinner{
+    position: relative;
+    display: inline-block;
+    padding-left: 4em;
+}
+
+.iconSuccess{
+    --sds-c-icon-color-foreground: white;
+    --sds-c-icon-color-background: #00a335;
+}
+
+.iconError{
+    --sds-c-icon-color-foreground: white;
+    --sds-c-icon-color-background: #ba1122;
+}
