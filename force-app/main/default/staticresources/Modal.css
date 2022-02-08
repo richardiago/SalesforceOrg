@@ -1,0 +1,21 @@
+.slds-modal__container {
+	width: 80vw !important;
+	max-width: 80vw !important;
+	overflow-y: hidden;
+}
+
+.slds-modal__container .modal-body {
+	max-height: 80vh !important;
+	height: auto !important;
+	overflow-y: hidden;
+}
+
+.slds-modal__content {
+	max-height: 80vh !important;
+	height: auto !important;
+}
+
+.inner-modal-over .quick-actions-panel,
+.inner-modal-over{
+    overflow-y: hidden !important;
+}
