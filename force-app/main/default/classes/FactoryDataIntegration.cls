@@ -1,4 +1,4 @@
-public with sharing class FactoryDataIntegration {
+public without sharing class FactoryDataIntegration {
        
     @TestVisible
     private static void validateObject(String fieldId, String fieldKey, SObject data, List<SObject> listToUpsert, List<TemplateDataIntegrationFields.Response> responseList, List<String> requiredField){

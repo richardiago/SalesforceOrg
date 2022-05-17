@@ -1,4 +1,4 @@
-public with sharing class ContactHandler extends TriggerHandler {
+public without sharing class ContactHandler extends TriggerHandler {
     
     public ContactHandler(System.TriggerOperation operation, List<Contact> newRecordList, List<Contact> oldRecordList, Map<Id, Contact> newMap, Map<Id, Contact> oldMap) {
         super(operation, newRecordList, oldRecordList, newMap, oldMap);

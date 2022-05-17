@@ -1,4 +1,4 @@
-public with sharing class CustomLookupController {
+public without sharing class CustomLookupController {
     
     @AuraEnabled
     public static List<RecordsData> fetchRecords(String objectName, String filterField, String searchString, String value) {

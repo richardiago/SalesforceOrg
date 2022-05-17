@@ -1,5 +1,5 @@
 @RestResource(urlMapping='/Contact')
-global with sharing class BulkApiContact {
+global without sharing class BulkApiContact {
     
     @HttpPost
     global static void insertContact(){

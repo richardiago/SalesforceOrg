@@ -1,4 +1,4 @@
-public with sharing class AccountHelper {
+public without sharing class AccountHelper {
     public AccountHelper() {}
 
     public static void criaHistoricoConta(Map<Id, Account> newRecordsMap, Map<Id, Account> oldRecordsMap){

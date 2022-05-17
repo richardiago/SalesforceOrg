@@ -1,3 +1,3 @@
-global with sharing class ResponseModel {
+global without sharing class ResponseModel {
     global List<TemplateDataIntegrationFields.Response> response;
 }

@@ -1,4 +1,4 @@
-global with sharing class ConsultaCEP {
+global without sharing class ConsultaCEP {
     
     @InvocableMethod(Label = 'Consulta API ViaCEP')
     public static List<AddressVo> consultaViaCep(List<String> cep){
@@ -8,6 +8,7 @@ global with sharing class ConsultaCEP {
         HttpRequest request = new HttpRequest();
         request.setMethod('GET');
         request.setEndpoint('https://viacep.com.br/ws/' + cep[0] + '/json/');
+        request.setTimeout(1200);
 
         Http h = new Http();
         HttpResponse resp = h.send(request);

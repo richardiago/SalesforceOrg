@@ -1,5 +1,5 @@
 @RestResource(urlMapping='/Aluno/*')
-global with sharing class IntegrationPotterAPI {
+global without sharing class IntegrationPotterAPI {
     
     @HttpGet
     global static Aluno__c getAluno(){

@@ -1,4 +1,4 @@
-public class IntegrationUtils {
+public without sharing class IntegrationUtils {
     
     public static Boolean convertEmptyString(String str){
         return ((String.isBlank(str) || str == 'null' || str == null || str == '')?true:false); 

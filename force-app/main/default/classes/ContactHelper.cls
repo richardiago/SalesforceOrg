@@ -1,4 +1,4 @@
-public with sharing class ContactHelper {
+public without sharing class ContactHelper {
     public ContactHelper() {}
 
     //Só permite alterar o email caso a alteração seja feita pelo Ligthning Web Component "Alteração de Email" (repeatEmail)

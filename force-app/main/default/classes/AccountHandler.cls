@@ -1,4 +1,4 @@
-public with sharing class AccountHandler extends TriggerHandler {
+public without sharing class AccountHandler extends TriggerHandler {
     
     public AccountHandler(System.TriggerOperation operation, List<Account> newRecordList, List<Account> oldRecordList, Map<Id, Account> newMap, Map<Id, Account> oldMap) {
         super(operation, newRecordList, oldRecordList, newMap, oldMap);

@@ -1,4 +1,4 @@
-public with sharing class TemplateDefaultFields {
+public without sharing class TemplateDefaultFields {
 
     public interface FieldDefaults { 
         Map<String, Object> getFieldDefaults();

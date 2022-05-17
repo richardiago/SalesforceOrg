@@ -1,4 +1,4 @@
-public class AccountCSVGenerator {
+public without sharing class AccountCSVGenerator {
     
     @InvocableMethod(label='Generate Account CSV File' category='Account' description='Generate CSV for account objects and send by email')
     public static void generateAccountCSVFile(List<String> emailList){

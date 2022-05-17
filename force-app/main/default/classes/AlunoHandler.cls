@@ -1,4 +1,4 @@
-public with sharing class AlunoHandler extends TriggerHandler {
+public without sharing class AlunoHandler extends TriggerHandler {
     
     public AlunoHandler(System.TriggerOperation operation, List<Aluno__c> newRecordList, List<Aluno__c> oldRecordList, Map<Id, Aluno__c> newMap, Map<Id, Aluno__c> oldMap) {
         super(operation, newRecordList, oldRecordList, newMap, oldMap);

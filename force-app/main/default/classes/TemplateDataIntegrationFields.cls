@@ -1,4 +1,4 @@
-global with sharing class TemplateDataIntegrationFields {
+global without sharing class TemplateDataIntegrationFields {
 
     public interface FieldData {
         List<String> getRequiredFields();
