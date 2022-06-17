@@ -1,4 +1,4 @@
-global with sharing class ConsultaCEP {
+global without sharing class ConsultaCEP {
     
     @InvocableMethod(Label = 'Consulta API ViaCEP')
     public static List<AddressVo> consultaViaCep(List<String> cep){
