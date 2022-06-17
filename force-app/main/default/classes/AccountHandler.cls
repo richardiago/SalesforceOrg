@@ -29,7 +29,7 @@ public without sharing class AccountHandler extends TriggerHandler {
     public override void beforeUpdate(){}
 
     public override void afterUpdate(){
-        AccountHelper.criaHistoricoConta((Map<Id, Account>) newMap, (Map<Id, Account>) oldMap);
+        //AccountHelper.criaHistoricoConta((Map<Id, Account>) newMap, (Map<Id, Account>) oldMap);
     }
 
     public override void beforeDelete(){}
