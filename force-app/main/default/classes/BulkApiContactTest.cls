@@ -1,5 +1,5 @@
 @isTest
-global with sharing class BulkApiContactTest implements HttpCalloutMock{
+global without sharing class BulkApiContactTest implements HttpCalloutMock{
 
     @isTest
     public static void bulkCreate(){

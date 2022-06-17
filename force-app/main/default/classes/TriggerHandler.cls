@@ -1,4 +1,4 @@
-public abstract with sharing class TriggerHandler {
+public abstract without sharing class TriggerHandler {
     
     public System.TriggerOperation operation {get; set;}
     public List<SObject> newRecordList {get;set;}

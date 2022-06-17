@@ -1,4 +1,4 @@
-public class AssistScreenController {
+public without sharing class AssistScreenController {
     
     @AuraEnabled
     public static String getAssetRecords(Id caseId){

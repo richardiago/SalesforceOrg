@@ -1,4 +1,4 @@
-public class TestFactory {
+public without sharing class TestFactory {
 
     // Default Fields For SObjects
     private static final String DEFAULT_FIELD_FOR_SOBJECTS = 'Name';

@@ -1,4 +1,4 @@
-public class CardTestController {
+public without sharing class CardTestController {
     
     @AuraEnabled(cacheable=true)
     public static List<Contact> getContacts(Id accountId){

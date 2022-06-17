@@ -8,6 +8,7 @@ global without sharing class ConsultaCEP {
         HttpRequest request = new HttpRequest();
         request.setMethod('GET');
         request.setEndpoint('https://viacep.com.br/ws/' + cep[0] + '/json/');
+        request.setTimeout(1200);
 
         Http h = new Http();
         HttpResponse resp = h.send(request);
