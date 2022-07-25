@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "8e746095-7758-423e-9853-4545c721cb83",
+  "appPageId" : "cf05a5d2-faeb-4a86-888b-5bccd9b17a4d",
+  "configurationTags" : [ ],
+  "id" : "dad44e45-e3d7-4dea-9b5c-a2d76712dc3c",
+  "label" : "Certifications",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-certifications",
+  "type" : "route",
+  "urlPrefix" : "Certifications"
+}

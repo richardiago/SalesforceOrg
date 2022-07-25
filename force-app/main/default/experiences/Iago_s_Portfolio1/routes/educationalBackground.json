@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "ed0e6fc4-3e95-4e87-84a8-d489517615be",
+  "appPageId" : "cf05a5d2-faeb-4a86-888b-5bccd9b17a4d",
+  "configurationTags" : [ ],
+  "id" : "c66fe19f-593a-4f87-a22f-056a8daedf4d",
+  "label" : "Educational Background",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-educational-background",
+  "type" : "route",
+  "urlPrefix" : "Educational-Background"
+}

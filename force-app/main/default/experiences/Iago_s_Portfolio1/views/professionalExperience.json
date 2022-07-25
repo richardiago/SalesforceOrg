@@ -1,0 +1,69 @@
+{
+  "appPageId" : "cf05a5d2-faeb-4a86-888b-5bccd9b17a4d",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "23eb0c17-e562-4854-9d9a-f8da2b6b25d6",
+  "label" : "Professional Experience",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "bda34094-d1d3-4722-8746-88e90d1fb117",
+          "columns" : [ {
+            "UUID" : "3dbd6354-d569-43e3-8350-1b11ea6c90b4",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "bda34094-d1d3-4722-8746-88e90d1fb117",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"experience_card\">\n  \n  <div class=\"experience_container\">\n    <h3><b>Salesforce Developer</b></h3> \n    <p><a href=\"https://www.nescara.com/site/\">Nèscara Ltda.</a> | Feb/2020 - now</p>\n    \n    <ul>\n    \t<li>Apex development (Triggers, Batches, Schedules)</li>\n        <li>Lightning Web Components (LWC)</li>\n        <li>Integrations (Custom and Standard Salesforce API)</li>\n        <li>Relational modeling</li>\n        <li>Automations (Flow, Process Builder)</li>\n        <li>Security(Profiles, Permission Sets, Validation Rules)</li>\n        <li>Deploy (Change Sets, SFDX)</li>\n    </ul>\n    \n  </div>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "774bd3f4-c993-4f9f-a84f-3d781a50f4ad",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3dbd6354-d569-43e3-8350-1b11ea6c90b4",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "27c21df9-d851-4bd7-a6b6-e0121884c791",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Professional Experience"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "4a15ceea-9c2b-447f-8a33-d0348bfffcb0",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bfb92e07-55cd-42bb-b76d-9bc57bddda4f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-professional-experience"
+}

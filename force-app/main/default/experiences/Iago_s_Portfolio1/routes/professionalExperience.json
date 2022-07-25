@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "23eb0c17-e562-4854-9d9a-f8da2b6b25d6",
+  "appPageId" : "cf05a5d2-faeb-4a86-888b-5bccd9b17a4d",
+  "configurationTags" : [ ],
+  "id" : "00994725-3a1e-47c1-b57f-746d79ffff8a",
+  "label" : "Professional Experience",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-professional-experience",
+  "type" : "route",
+  "urlPrefix" : "Professional-Experience"
+}

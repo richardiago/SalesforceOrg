@@ -1,0 +1,69 @@
+{
+  "appPageId" : "cf05a5d2-faeb-4a86-888b-5bccd9b17a4d",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "ed0e6fc4-3e95-4e87-84a8-d489517615be",
+  "label" : "Educational Background",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "edccc959-4c2f-41bb-bc37-768bc0f23b4e",
+          "columns" : [ {
+            "UUID" : "8c80743e-4e7f-42dc-99ee-57e2c67702c5",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "edccc959-4c2f-41bb-bc37-768bc0f23b4e",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<div class=\"educational_card\">\n  \n  <div class=\"educational_container\">\n    <h3><b>Bachelor in Computer Science 2</b></h3> \n    <p><a href=\"https://www.ufabc.edu.br/\">Federal University of ABC (UFABC)</a></p>\n      <p>Completed in 2021</p>    \n  </div>\n</div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "d03aa117-392e-4ae0-99e9-2aecb342d9c4",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "8c80743e-4e7f-42dc-99ee-57e2c67702c5",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bb19bdaa-72f3-4c2b-8371-be657c0f284e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Educational Background"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f46c5579-1caf-49cf-a2c6-0b5353867a78",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "04b9a8a0-f7bf-4921-ae66-167db774ee8c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-educational-background"
+}

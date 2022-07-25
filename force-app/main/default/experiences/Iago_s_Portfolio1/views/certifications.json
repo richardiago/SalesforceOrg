@@ -1,0 +1,69 @@
+{
+  "appPageId" : "cf05a5d2-faeb-4a86-888b-5bccd9b17a4d",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "8e746095-7758-423e-9853-4545c721cb83",
+  "label" : "Certifications",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "89aad321-0606-4871-83b7-0bc80a10883f",
+          "columns" : [ {
+            "UUID" : "1c6c3b57-3ea7-415d-a8dd-650030ca5300",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "89aad321-0606-4871-83b7-0bc80a10883f",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.X202103_Badge_SFCertified_Administra.1}\" style=\"width: 226.354px; height: 221.806px;\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.X202103_Badge_SFCertified_PlatformDe.1}\" style=\"width: 217.361px; height: 213.108px;\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.X202103_Badge_SFCertified_ServiceClo.1}\" style=\"width: 229.375px; height: 225px;\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.X202103_Badge_SFCertified_PlatformAp.1}\" style=\"width: 236.302px; height: 231.545px;\"> <img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.X202103_Badge_SFCertified_Experience.1}\" style=\"width: 226.076px; height: 221.649px;\"></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "af0dbab9-530c-4471-ba25-13c567218443",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1c6c3b57-3ea7-415d-a8dd-650030ca5300",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "274c6ace-1c59-47d0-a3c3-06b94b401588",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Certifications"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "dba55549-b3d4-4f54-9c79-d9e928263fe9",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a364f0cb-76ce-4982-a330-d9b7d5aea884",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-certifications"
+}
