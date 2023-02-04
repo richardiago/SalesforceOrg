@@ -1,0 +1,13 @@
+<template>
+
+    <c-lookup
+        target-object="Account"
+        placeholder={placeholder}
+        search-field-list={fieldsToSearch}
+        text-options={optionsToShow}
+        onselectrecord={changeOrderItem}
+	    onclearselectedrecord={clearOrderItem}
+        object-icon-name="standard:account"> 
+    </c-lookup>
+    
+</template>
